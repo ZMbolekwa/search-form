@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GamesModelStoreContainer" CdmEntityContainer="GamesEntities">
+    <EntitySetMapping Name="tblGames">
+      <EntityTypeMapping TypeName="GamesModel.tblGame">
+        <MappingFragment StoreEntitySet="tblGames">
+          <ScalarProperty Name="gameId" ColumnName="gameId" />
+          <ScalarProperty Name="gName" ColumnName="gName" />
+          <ScalarProperty Name="publishedDate" ColumnName="publishedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
