@@ -63,11 +63,11 @@
 						</div> <!-- end entry content -->         		
 					</div>
 
-					<article class="brick entry format-standard animate-this">
+					<article class="brick entry format-standard animate-this" *ngFor="let gam of homeService.games">
 
 							<div class="entry-thumb">
 								 <a href="https://www.epicgames.com/fortnite/en-US/news/world-cup-creative-trials" target = "_blank" class="thumb-link">
-									 <img src="assets/images/trial.jpg" alt="building">             
+									 <img src="assets/images/{{gam.thumbImage}}" alt="building">             
 								 </a>
 							</div>
 
@@ -76,27 +76,28 @@
 
 									 <div class="entry-meta">
 											 <span class="cat-links">
-													 <a href="#">5.3.2019</a> 
-													 <a href="#">			By The Fortnite Team</a>     
+													 <!-- <a href="#">5.3.2019 </a>  -->
+													 <a href="#">{{gam.publishedDate}} </a> 
+													 <a href="#">			{{gam.author}}</a>     
 																							
 											 </span>			
 									 </div>
 
-									<h1 class="entry-title"><a href="single-standard.html">World Cup Creative Trials.</a></h1>
+									<h1 class="entry-title"><a href="single-standard.html">{{gam.firsthHeading}}</a></h1>
 									
 								</div>
 					 <div class="entry-excerpt">
-						Fortnite World Cup Creative Trials features five events, each focused on a new Creative game. 
+						{{gam.firstArticle}} 
 				 </div>
 							</div>
 
 					 </article> <!-- end article -->
 
-					 <article class="brick entry format-standard animate-this">
+					 <article class="brick entry format-standard animate-this" *ngFor="let gam of homeService.games">
 
 							<div class="entry-thumb">
 								 <a href="https://www.epicgames.com/fortnite/en-US/news/fortnite-summer-block-party" class="thumb-link">
-									 <img src="assets/images/fortnite-summer.jpg" alt="ferris wheel">                   
+									 <img src="assets/images/{{gam.thumbImg}}" alt="ferris wheel">                   
 								 </a>
 							</div>
 
@@ -105,18 +106,17 @@
 
 									<div class="entry-meta">
 										<span class="cat-links">
-											<a href="#">5.10.2019
+											<a href="#">{{gam.publishedDate}}
 								 </a> 
-											<a href="#">			By The Fortnite Team</a>                			
+											<a href="#">			{{gam.author}}</a>                			
 										</span>			
 									</div>
 
-									<h1 class="entry-title"><a href="single-standard.html">Summer Block Party</a></h1>
+									<h1 class="entry-title"><a href="single-standard.html">{{gam.secondHeading}}</a></h1>
 									
 								</div>
 					 <div class="entry-excerpt">
-						 Introducing the Fortnite Summer Block Party - a two-day event at the Forum in Inglewood, California celebrating the Fortnite community along with some of your favorite creators and celebrities, like Ninja, Brendon Urie of Panic! At The Disco, Dillon Francis, Cray and Jordan Fisher.
-					 </div>
+{{gam.secondArticle}}					 </div>
 							</div>
 							
 					 </article> <!-- end article -->

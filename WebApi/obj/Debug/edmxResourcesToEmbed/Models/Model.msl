@@ -7,6 +7,13 @@
           <ScalarProperty Name="gameId" ColumnName="gameId" />
           <ScalarProperty Name="gName" ColumnName="gName" />
           <ScalarProperty Name="publishedDate" ColumnName="publishedDate" />
+          <ScalarProperty Name="firsthHeading" ColumnName="firsthHeading" />
+          <ScalarProperty Name="firstArticle" ColumnName="firstArticle" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="secondArticle" ColumnName="secondArticle" />
+          <ScalarProperty Name="secondHeading" ColumnName="secondHeading" />
+          <ScalarProperty Name="thumbImage" ColumnName="thumbImage" />
+          <ScalarProperty Name="thumbImg" ColumnName="thumbImg" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

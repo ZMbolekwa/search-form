@@ -7,6 +7,13 @@
     <Property Name="gameId" Type="int" Nullable="false" />
     <Property Name="gName" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="publishedDate" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="firsthHeading" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="firstArticle" Type="varchar(max)" Nullable="false" />
+    <Property Name="author" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="secondArticle" Type="varchar(max)" />
+    <Property Name="secondHeading" Type="varchar" MaxLength="50" />
+    <Property Name="thumbImage" Type="nvarchar(max)" />
+    <Property Name="thumbImg" Type="nchar" MaxLength="10" />
   </EntityType>
   <EntityContainer Name="GamesModelStoreContainer">
     <EntitySet Name="tblGames" EntityType="Self.tblGames" Schema="dbo" store:Type="Tables" />

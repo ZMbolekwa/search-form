@@ -7,6 +7,13 @@
     <Property Name="gameId" Type="Int32" Nullable="false" />
     <Property Name="gName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="publishedDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="firsthHeading" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="firstArticle" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="author" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="secondArticle" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="secondHeading" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="thumbImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="thumbImg" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
   </EntityType>
   <EntityContainer Name="GamesEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="tblGames" EntityType="Self.tblGame" />

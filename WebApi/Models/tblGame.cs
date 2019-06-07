@@ -17,5 +17,12 @@ namespace WebApi.Models
         public int gameId { get; set; }
         public string gName { get; set; }
         public string publishedDate { get; set; }
+        public string firsthHeading { get; set; }
+        public string firstArticle { get; set; }
+        public string author { get; set; }
+        public string secondArticle { get; set; }
+        public string secondHeading { get; set; }
+        public string thumbImage { get; set; }
+        public string thumbImg { get; set; }
     }
 }
